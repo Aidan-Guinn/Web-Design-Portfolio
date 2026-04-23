@@ -404,18 +404,24 @@ body::after {
 
 .ticker__track {
   display: flex;
-  gap: 3.5rem;
   white-space: nowrap;
   animation: ticker 30s linear infinite;
 }
 
-.ticker__track span {
+/* Each set is exactly half the track — padding-right makes the seam gap match */
+.ticker__set {
+  display: flex;
+  gap: 3rem;
+  padding-right: 3rem;
+  flex-shrink: 0;
+}
+
+.ticker__set span {
   font-size: 0.7rem;
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--muted-2);
-  flex-shrink: 0;
 }
 
 @keyframes ticker {
