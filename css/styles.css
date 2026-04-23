@@ -32,9 +32,8 @@ body {
   color: var(--text);
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
-  cursor: none;
 }
-@media (hover: none) { body { cursor: auto; } }
+
 a { color: inherit; text-decoration: none; }
 
 /* ── Grain overlay ──────────────────────────────────────── */
@@ -95,7 +94,6 @@ body::after {
   font-size: 1.6rem;
   letter-spacing: 1px;
   color: var(--text);
-  cursor: none;
 }
 
 .nav__brand span { color: var(--lime); }
@@ -108,7 +106,6 @@ body::after {
   color: var(--muted-2);
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  cursor: none;
   position: relative;
   transition: color 0.2s;
 }
@@ -291,7 +288,6 @@ body::after {
   font-size: 0.85rem;
   font-weight: 600;
   letter-spacing: 0.04em;
-  cursor: none;
   transition: transform 0.15s var(--ease-out), box-shadow 0.2s, background 0.2s, border-color 0.2s;
   border: none;
   white-space: nowrap;
@@ -913,7 +909,6 @@ body::after {
   font-weight: 500;
   color: var(--muted-2);
   transition: color 0.2s;
-  cursor: none;
 }
 
 .footer__links a:hover { color: var(--text); }
@@ -943,7 +938,6 @@ body::after {
 }
 
 @media (max-width: 800px) {
-  body { cursor: auto; }
   .cursor-glow { display: none; }
 
   .proj__row {
