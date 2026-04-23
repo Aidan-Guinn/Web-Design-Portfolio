@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aidan Guinn — Web Developer</title>
+  <meta name="description" content="Web developer building fast, custom sites and full-stack systems for real businesses.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav class="nav" id="nav">
+    <a href="#hero" class="nav__brand">AG</a>
+    <div class="nav__links">
+      <a href="#work">Work</a>
+      <a href="#stack">Stack</a>
+      <a href="https://github.com/Aidan-Guinn" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero__inner">
+      <div class="hero__content">
+        <div class="hero__eyebrow js-h0">Full-Stack Web Developer</div>
+        <h1 class="hero__name">
+          <span class="js-h1">Aidan</span>
+          <span class="js-h2">Guinn<em>.</em></span>
+        </h1>
+        <p class="hero__bio js-h3">I build fast, custom websites and full-stack systems — from marketing sites to CRM backends, deployed on real infrastructure.</p>
+        <div class="hero__ctas js-h4">
+          <a href="#work" class="btn btn--primary">See my work</a>
+          <a href="https://github.com/Aidan-Guinn" target="_blank" rel="noopener" class="btn btn--ghost">GitHub →</a>
+        </div>
+      </div>
+
+      <div class="hero__code js-h5" aria-hidden="true">
+        <div class="code-win">
+          <div class="code-win__bar">
+            <span class="cdot cdot--r"></span>
+            <span class="cdot cdot--y"></span>
+            <span class="cdot cdot--g"></span>
+          </div>
+          <pre class="code-win__body"><code><span class="t-kw">const</span> <span class="t-var">developer</span> <span class="t-op">=</span> {
+  <span class="t-prop">name</span><span class="t-op">:</span>    <span class="t-str">"Aidan Guinn"</span>,
+  <span class="t-prop">focus</span><span class="t-op">:</span>   <span class="t-str">"full-stack web"</span>,
+  <span class="t-prop">stack</span><span class="t-op">:</span>   [
+    <span class="t-str">"Node.js"</span>, <span class="t-str">"React"</span>,
+    <span class="t-str">"PostgreSQL"</span>, <span class="t-str">"Docker"</span>
+  ],
+  <span class="t-prop">infra</span><span class="t-op">:</span>   <span class="t-str">"AWS + Terraform"</span>,
+  <span class="t-prop">ships</span><span class="t-op">:</span>   <span class="t-bool">true</span>,
+};</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section class="section work" id="work">
+    <div class="container">
+      <p class="section__eyebrow" data-aos="fade-up">Selected Work</p>
+      <h2 class="section__heading" data-aos="fade-up" data-aos-delay="100">Real clients.<br><em>Production code.</em></h2>
+
+      <!-- 01: AA Auto Glass -->
+      <article class="project" data-aos="fade-up">
+        <div class="project__visual pv--aa">
+          <div class="mbrow">
+            <div class="mbrow__bar">
+              <span class="mbrow__dot"></span><span class="mbrow__dot"></span><span class="mbrow__dot"></span>
+            </div>
+            <div class="mbrow__screen ms--aa">
+              <div class="ms__nav">AA Auto Glass</div>
+              <div class="ms__hero-text">Clear vision. Every drive.</div>
+              <div class="ms__cta-pill">Book Appointment →</div>
+              <div class="ms__svcs">
+                <div class="ms__svc">Windshield</div>
+                <div class="ms__svc">Chip Repair</div>
+                <div class="ms__svc">Insurance</div>
+              </div>
+            </div>
+          </div>
+          <div class="pv-badge">
+            <div class="pv-badge__num">98</div>
+            <div class="pv-badge__lbl">PageSpeed</div>
+          </div>
+        </div>
+        <div class="project__body">
+          <div class="project__num">01</div>
+          <h3 class="project__title">AA Auto Glass</h3>
+          <p class="project__loc">Ogden, UT — Auto Glass Shop</p>
+          <p class="project__desc">Custom marketing site for a 30+ year auto glass business. Built a 4-step booking wizard with insurance verification, WebP-optimized images, and strict mobile-first design. Zero page builders — scores 98 on PageSpeed Insights.</p>
+          <div class="project__tags">
+            <span>HTML / CSS / JS</span>
+            <span>4-step Booking Wizard</span>
+            <span>Mobile-first</span>
+            <span>nginx</span>
+            <span>WebP Optimization</span>
+          </div>
+          <p class="project__note">Private client — code and screenshots available on request.</p>
+        </div>
+      </article>
+
+      <!-- 02: Shields Auto -->
+      <article class="project project--flip" data-aos="fade-up">
+        <div class="project__visual pv--shields">
+          <div class="mbrow">
+            <div class="mbrow__bar">
+              <span class="mbrow__dot"></span><span class="mbrow__dot"></span><span class="mbrow__dot"></span>
+            </div>
+            <div class="mbrow__screen ms--shields">
+              <div class="ms__nav ms__nav--dark">Shields Admin</div>
+              <div class="ms__dash">
+                <div class="ms__tile">12<div>Jobs Today</div></div>
+                <div class="ms__tile">4<div>Pending</div></div>
+                <div class="ms__tile">94%<div>Capacity</div></div>
+              </div>
+              <div class="ms__rows">
+                <div class="ms__row"></div>
+                <div class="ms__row ms__row--alt"></div>
+                <div class="ms__row"></div>
+                <div class="ms__row ms__row--alt"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project__body">
+          <div class="project__num">02</div>
+          <h3 class="project__title">Shields Auto Centre</h3>
+          <p class="project__loc">Georgetown, ON — Auto Repair Shop</p>
+          <p class="project__desc">Two-system build: a public marketing site with online booking, and a React/TypeScript admin SPA with a full CRM. Customer database, staff scheduling, automated work order sync with Mitchell repair system, Twilio SMS reminders, and OIDC authentication with role-based access control.</p>
+          <div class="project__tags">
+            <span>Node.js / Express</span>
+            <span>React / TypeScript</span>
+            <span>PostgreSQL</span>
+            <span>Redis</span>
+            <span>Docker Compose</span>
+            <span>Twilio SMS</span>
+            <span>OIDC / RBAC</span>
+          </div>
+          <p class="project__note">Private client — code and screenshots available on request.</p>
+        </div>
+      </article>
+
+      <!-- 03: Veltrigen -->
+      <article class="project" data-aos="fade-up">
+        <div class="project__visual pv--veltrigen">
+          <div class="mbrow">
+            <div class="mbrow__bar">
+              <span class="mbrow__dot"></span><span class="mbrow__dot"></span><span class="mbrow__dot"></span>
+            </div>
+            <div class="mbrow__screen ms--veltrigen">
+              <div class="ms__nav ms__nav--dark">Veltrigen / AWS</div>
+              <div class="ms__metrics">
+                <div class="ms__metric">
+                  <div class="ms__bar" style="--h:60%"></div>
+                  <div class="ms__bar-lbl">CPU</div>
+                </div>
+                <div class="ms__metric">
+                  <div class="ms__bar" style="--h:42%"></div>
+                  <div class="ms__bar-lbl">Mem</div>
+                </div>
+                <div class="ms__metric">
+                  <div class="ms__bar" style="--h:78%"></div>
+                  <div class="ms__bar-lbl">Req/s</div>
+                </div>
+                <div class="ms__metric">
+                  <div class="ms__bar" style="--h:18%"></div>
+                  <div class="ms__bar-lbl">Err</div>
+                </div>
+              </div>
+              <div class="ms__aws">
+                <span>EC2</span><span>S3</span><span>VPC</span><span>IAM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project__body">
+          <div class="project__num">03</div>
+          <h3 class="project__title">Veltrigen</h3>
+          <p class="project__loc">E-Commerce Platform on AWS</p>
+          <p class="project__desc">Full infrastructure build using Terraform: VPC, EC2, encrypted S3 backup bucket, IAM with MFA enforcement, GuardDuty for threat detection, and DLM hourly EBS snapshots. Application layer is Node.js + PostgreSQL in Docker Compose, with a Grafana + Prometheus monitoring stack and an admin panel.</p>
+          <div class="project__tags">
+            <span>Terraform</span>
+            <span>AWS EC2 / S3 / VPC / IAM</span>
+            <span>Node.js</span>
+            <span>PostgreSQL</span>
+            <span>Docker Compose</span>
+            <span>Grafana / Prometheus</span>
+            <span>GuardDuty</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Stack -->
+  <section class="section stack" id="stack">
+    <div class="container">
+      <p class="section__eyebrow" data-aos="fade-up">Tools & Tech</p>
+      <h2 class="section__heading" data-aos="fade-up" data-aos-delay="100">What I build<br><em>things with.</em></h2>
+      <div class="stack__grid">
+        <div class="stack__group" data-aos="fade-up" data-aos-delay="0">
+          <div class="stack__label">Frontend</div>
+          <div class="stack__chips">
+            <span>HTML / CSS</span><span>JavaScript</span><span>React</span>
+            <span>TypeScript</span><span>Tailwind CSS</span><span>Vite</span>
+          </div>
+        </div>
+        <div class="stack__group" data-aos="fade-up" data-aos-delay="80">
+          <div class="stack__label">Backend</div>
+          <div class="stack__chips">
+            <span>Node.js</span><span>Express</span><span>PostgreSQL</span>
+            <span>Redis</span><span>REST APIs</span>
+          </div>
+        </div>
+        <div class="stack__group" data-aos="fade-up" data-aos-delay="160">
+          <div class="stack__label">Infrastructure</div>
+          <div class="stack__chips">
+            <span>Docker</span><span>Docker Compose</span><span>AWS</span>
+            <span>Terraform</span><span>nginx</span><span>Grafana</span><span>Prometheus</span>
+          </div>
+        </div>
+        <div class="stack__group" data-aos="fade-up" data-aos-delay="240">
+          <div class="stack__label">Auth & Integrations</div>
+          <div class="stack__chips">
+            <span>OIDC / OAuth</span><span>RBAC</span><span>Twilio</span><span>Resend</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">Aidan<span>.</span>Guinn</div>
+      <p class="footer__sub">Available for web development internships.</p>
+      <div class="footer__links">
+        <a href="https://github.com/Aidan-Guinn" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:wbguinn77@gmail.com">wbguinn77@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
